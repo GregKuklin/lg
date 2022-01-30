@@ -1,58 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Бычья, да медвежья свечка</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+	<title>Панель управления</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
 </head>
 <body>
 	<div class="sidebar">
-	   <div class="logo-content">
-	   	<div class="logo">
-	   	<i class="bx bx-c-plus-plus"></i>
-	   		<div class="logo-name">
-	   		Wall street
-	   	</div>
-	   </div>
-	   <i class="bx bx=menu" id="btn"></i>
-	</div>
+		<div class="logo-content">
+			<div class="logo">
+				<i class="bx bx-c-plus-plus">
+					<div class="logo-name">
+					 Izidi
+					</div>
+				</div>
+				</i class="bx bx-menu" id="btn"></i>
+		       </div>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Поиск...">
+          <span class="tooltip">Поиск...</span>
+         </li>
+     </li>
+            <a href="#"> 
+            <i class="bx bx-grid--alt"></i>
+            <span class="link_name">Главная</span>
+        </a>
+        <span class="tooltip">Главная</span>
+    </li>
+    <li>
+    	<a href="#">
+    	 <i class="bx bx-user"></i>
+    	 <span class="link_name">Профиль</span>
+    </a>
+    	 <span class="tooltip">Профиль</span>
+    </li>
+    <li>    	
+    	<a href="#">
+    	 <i class="bx bx-message"></i>
+    	 <span class="link_name">Сообщения...</span>
+    </a>
+    	 <span class="tooltip">Сообщения...</span>
+    </li>
+    <li>
+    	<a href="#">
+    	 <i class="bx bx-cog"></i>
+    	 <span class="link_name">Настройки</span>
+    </a>
+    	 <span class="tooltip">Настройки</span>
+    </li>
+    </ul>
+   </div>
+    <div class="home_content">
+    	<div class="text">
+    	АЛЛА ВЫшлА ЗАФРУкТАми!1!
+    </div>
+   </div>
+   <script>
+   		let btn = document.querySelector("#btn");
+   		let sidebar = document.querySelector(".sidebar");
+   		let searchBtn = document.querySelector(".bx-search");
 
-    <ul class class="nav_list">
-    	<li>
-    		<i class="bx bx-search"></i>
-    		<input type="text" placeholder="Поиск...">
-    	    <span class="tooltip"></span>
-    	</li>
-    <li>
-    	<a href="#">
-    		<i class="bx bx-grid-alt"></i>
-    		<span link_name>主要</span>
-    	</a>
-    </li>
-    	</li>
-    <li>
-    	<a href="#">
-    		<i class="bx bx-grid-user"></i>
-    		<span link_name>个人资料</span>
-    	</a>
-    </li>
-    	</li>
-    <li>
-    	<a href="#">
-    		<i class="bx bx-grid-messages"></i>
-    		<span link_name>信息</span>
-    	</a>
-    </li>
-    	</li>
-    <li>
-    	<a href="#">
-    		<i class="bx bx-grid-cog"></i>
-    		<span link_name>设置</span>
-    	</a>
-    </li>
-</ul>
-
-</div>
+   		btn.onclick = function () {
+   			sidebar.classList.toggle("active");
+   		}
+   		searchBtn.onclick = function () {
+   			sidebar.classList.toggle("active");
+   		}
+   	</script>
+   </div>
 </body>
 </html>
